@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{292B7E90-453C-4B85-BDC8-CBB5D2F384C3}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Asp.net_220Core_220Hello_220world_220MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs">
+    <Files>
+      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" Line="32" Column="139" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Create.cshtml" Line="5" Column="20" />
+      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" Line="12" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Views/Shared/_Layout.cshtml" Line="31" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Asp.net Core Hello world MVC" expanded="True">
+            <Node name="Asp.net Core Hello world MVC" expanded="True">
+              <Node name="Controllers" expanded="True" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="HelloWorld" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
