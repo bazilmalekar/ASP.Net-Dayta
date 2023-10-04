@@ -19,7 +19,6 @@
     </div>
 
     <div class="row">
-        
         <div class="form-group col-md-6">
             <label class="form-label" asp-for="DateOfBirth"></label>
             <input class="form-control" asp-for="DateOfBirth" />
@@ -32,37 +31,50 @@
             <span class="text-danger" asp-validation-for="Email"></span>
         </div>
 
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            <div class="row">
+                <div>
+                    <label class="form-label" asp-for="Phone"></label>
+                    <input class="form-control" asp-for="Phone" />
+                    <span class="text-danger" asp-validation-for="Phone"></span>
+                </div>
+                <div>
+                    <label class="form-label" asp-for="Address"></label>
+                    <input class="form-control" asp-for="Address" />
+                    <span class="text-danger" asp-validation-for="Address"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label class="form-label" asp-for="Feedback"></label>
+            @*Text area is not auto closed*@
+            <textarea rows="4" cols="10" class="form-control" asp-for="Feedback"></textarea>
+            <span class="text-danger" asp-validation-for="Feedback"></span>
+        </div>
+
+    </div>
+
+    <div class="row">
         <div>
-            <input class="btn btn-info" type="submit" value="Submit" />
+            <label class="form-label">Designation</label>
+            <input class="form-control" name="Designation" />
+            <span class="text-danger"></span>
+        </div>
+
+        <div>
+            <label class="form-label" asp-for="EnumMaritalStatus"></label>
+            <select class="form-control" asp-for="EnumMaritalStatus" asp-items="Html.GetEnumSelectList<MaritalStatus>()">
+            <option>Select...</option>
+            </select>
+            <span class="text-danger" asp-validation-for="EnumMaritalStatus"></span>
         </div>
     </div>
 
-    @*<div class="form-group">
-            <label class="form-label" asp-for="Name"></label>
-            <input class="form-control" asp-for="Name" />
-            <span class="text-danger" asp-validation-for="Name"></span>
-        </div>
-
-        <div>
-            <label class="form-label" asp-for="Age"></label>
-            <input class="form-control" asp-for="Age" />
-            <span class="text-danger" asp-validation-for="Age"></span>
-        </div>
-
-        <div>
-            <label class="form-label" asp-for="DateOfBirth"></label>
-            <input class="form-control" asp-for="DateOfBirth" />
-            <span class="text-danger" asp-validation-for="DateOfBirth"></span>
-        </div>
-
-        <div>
-            <label class="form-label" asp-for="Email"></label>
-            <input class="form-control" asp-for="Email" />
-            <span class="text-danger" asp-validation-for="Email"></span>
-        </div>
-
-        <div>
-            <input class="btn btn-info" type="submit" value="Submit" />
-        </div>*@
-
+    <div>
+        <input class="btn btn-info" type="submit" value="Submit" />
+    </div>
 </form>

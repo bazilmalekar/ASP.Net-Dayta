@@ -32,8 +32,11 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 		[ValidateAntiForgeryToken]
 		//Bind -> here we are binding our properties, ie which ever property will be mention in bind, only that will be rendered.
 		//This will aviode "over posting", user will not be able to post age porperty if it is not mentioned. This is done for security purpose.
-		public IActionResult Create([Bind("Name, Age", "DateOfBirth", "Email")] HelloWorld helloWorld)
+		public IActionResult Create([Bind("Name, Age", "DateOfBirth", "Email", "Phone", "Address", "Feedback", "EnumMaritalStatus")] HelloWorld helloWorld, IFormCollection fc)
 		{
+
+			string designation = fc["Designation"];
+
 			if(helloWorld.DateOfBirth > DateTime.Today)
 			{
 				ModelState.AddModelError("DateOfBirth", "DOB must not be greater than today");
@@ -41,6 +44,8 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 			if (ModelState.IsValid)
 			{
 				ViewBag.Message = "Form is submitted, your name is " + helloWorld.Name + " age is " + helloWorld.Age + " years";
+				//If we want to clear the form after submission
+				ModelState.Clear();
 				return View();
 			}
 			ViewBag.Message = "There were validation errors";

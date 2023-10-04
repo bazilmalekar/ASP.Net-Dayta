@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bazilmalekar/Developer/Orientation/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj": {}
+    "/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj": {}
   },
   "projects": {
-    "/Users/bazilmalekar/Developer/Orientation/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj": {
+    "/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bazilmalekar/Developer/Orientation/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj",
+        "projectUniqueName": "/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj",
         "projectName": "Asp.net Core Hello world MVC",
-        "projectPath": "/Users/bazilmalekar/Developer/Orientation/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj",
+        "projectPath": "/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Asp.net Core Hello world MVC.csproj",
         "packagesPath": "/Users/bazilmalekar/.nuget/packages/",
-        "outputPath": "/Users/bazilmalekar/Developer/Orientation/Hello world MVC/Asp.net Core Hello world MVC/obj/",
+        "outputPath": "/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bazilmalekar/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.10, )"
