@@ -7,6 +7,9 @@ namespace Asp.net_Core_Hello_world_MVC.Models
 {
     public class HelloWorld
     {
+        //This is a primary key for our table
+        [Key]
+        public int HelloWorldId { get; set; }
         //The Error message will throw automatically, if you want custom error, you can use the below ErrorMessage method.
         [Required(ErrorMessage = "Age is required")]
         [StringLength(20)]

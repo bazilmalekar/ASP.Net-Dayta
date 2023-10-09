@@ -1,13 +1,17 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Asp.net_Core_Hello_world_MVC.Models;
+using Asp.net_Core_Hello_world_MVC.Data;
 
 namespace Asp.net_Core_Hello_world_MVC.Controllers
 {
 	public class HelloWorldController : Controller
 	{
-		public HelloWorldController()
+		public readonly Hello_world_MVCDbContext _db;
+
+        public HelloWorldController(Hello_world_MVCDbContext db)
 		{
+			_db = db;
 			
 		}
 
@@ -45,7 +49,10 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 			{
 				ViewBag.Message = "Form is submitted, your name is " + helloWorld.Name + " age is " + helloWorld.Age + " years";
 				//If we want to clear the form after submission
-				ModelState.Clear();
+				//ModelState.Clear();
+				_db.Add(helloWorld);
+				_db.SaveChanges();
+				ViewBag.message = "data saved successfully";
 				return View();
 			}
 			ViewBag.Message = "There were validation errors";
