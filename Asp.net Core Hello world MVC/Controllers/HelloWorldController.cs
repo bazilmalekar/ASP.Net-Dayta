@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Asp.net_Core_Hello_world_MVC.Models;
 using Asp.net_Core_Hello_world_MVC.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Asp.net_Core_Hello_world_MVC.Controllers
 {
@@ -15,12 +16,14 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 			
 		}
 
-		public IActionResult Index()
+		public async Task<IActionResult> Index()
 		{
 			ViewBag.Message = "This message is from view";
 			ViewData["Viewdata"] = "this message is from data";
 			TempData["TDMessage"] = "This message is from temp Data"; //Only for one session.
-			return View();
+
+			var helloWorldList = await _db.Helloworldtb.ToListAsync();
+			return View(helloWorldList);
 		}
 
 		public IActionResult Create()
@@ -36,7 +39,7 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 		[ValidateAntiForgeryToken]
 		//Bind -> here we are binding our properties, ie which ever property will be mention in bind, only that will be rendered.
 		//This will aviode "over posting", user will not be able to post age porperty if it is not mentioned. This is done for security purpose.
-		public IActionResult Create([Bind("Name, Age", "DateOfBirth", "Email", "Phone", "Address", "Feedback", "EnumMaritalStatus")] HelloWorld helloWorld, IFormCollection fc)
+		public async Task<IActionResult> Create([Bind("Name, Age", "DateOfBirth", "Email", "Phone", "Address", "Feedback", "EnumMaritalStatus")] HelloWorld helloWorld, IFormCollection fc)
 		{
 
 			string designation = fc["Designation"];
@@ -53,7 +56,8 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 				_db.Add(helloWorld);
 				_db.SaveChanges();
 				ViewBag.message = "data saved successfully";
-				return View();
+				//return View();
+				return RedirectToAction("Index");
 			}
 			ViewBag.Message = "There were validation errors";
 			return View();

@@ -1,34 +1,35 @@
 ﻿<Properties StartupConfiguration="{292B7E90-453C-4B85-BDC8-CBB5D2F384C3}|https">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Asp.net_220Core_220Hello_220world_220MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp.net Core Hello world MVC/Data /Asp.net Core Hello world MVCDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs">
     <Files>
-      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" />
-      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Create.cshtml" />
-      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" />
+      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" Line="47" Column="47" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Create.cshtml" Line="1" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" Line="25" Column="46" />
       <File FileName="Asp.net Core Hello world MVC/Views/Shared/_Layout.cshtml" />
       <File FileName="Asp.net Core Hello world MVC/Data /Asp.net Core Hello world MVCDbContext.cs" Line="18" Column="1" />
-      <File FileName="Asp.net Core Hello world MVC/appsettings.json" />
+      <File FileName="Asp.net Core Hello world MVC/appsettings.json" Line="3" Column="150" />
       <File FileName="Asp.net Core Hello world MVC/Program.cs" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Index.cshtml" Line="12" Column="20" />
+      <File FileName="Asp.net Core Hello world MVC/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Views/_ViewImports.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp.net Core Hello world MVC" expanded="True">
-            <Node name="Asp.net Core Hello world MVC" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data " expanded="True">
-                <Node name="Asp.net Core Hello world MVCDbContext.cs" selected="True" />
-              </Node>
+          <Node name="Asp.net Core Hello world MVC">
+            <Node name="Asp.net Core Hello world MVC">
+              <Node name="Data " expanded="True" />
+              <Node name="Models" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Asp.net_220Core_220Hello_220world_220MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
