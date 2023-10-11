@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.HelloWorldId)
+            </th>
+            <th>
                 @*These are the html helper class ex: HTML.DisplayNameFor()*@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -28,12 +31,18 @@
             <th>
                 @Html.DisplayNameFor(model => model.EnumMaritalStatus)
             </th>
+            <th>
+                Action
+            </th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
+                <td>
+                    @Html.DisplayFor(ModelItem => item.HelloWorldId)
+                </td>
                 <td>
                     @Html.DisplayFor(ModelItem => item.Name)
                 </td>
@@ -48,6 +57,10 @@
                 </td>
                 <td>
                     @Html.DisplayFor(ModelItem => item.EnumMaritalStatus)
+                </td>
+                <td>
+                    @*asp-rout-id is to pass parameter, where "id" is the arguement given in the controller, the name can be anything in place of id, but same thing has to be mentioned in view and controller*@
+                    <a asp-action="Edit" asp-route-id="@item.HelloWorldId">Edit</a>
                 </td>
             </tr>
         }

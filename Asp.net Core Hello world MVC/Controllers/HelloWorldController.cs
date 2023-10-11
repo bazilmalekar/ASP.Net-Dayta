@@ -62,6 +62,27 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 			ViewBag.Message = "There were validation errors";
 			return View();
 		}
-	}
+
+
+		//Edit action to gets the data in our form
+		public IActionResult Edit(int id)
+		{
+			var helloWorld = _db.Helloworldtb.Find(id);
+			return View(helloWorld);
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Edit([Bind("HelloWorldId, Name, Age", "DateOfBirth", "Email", "Phone", "Address", "Feedback", "EnumMaritalStatus")] HelloWorld helloWorld)
+        {
+			if (ModelState.IsValid)
+			{
+			_db.Update(helloWorld);
+			_db.SaveChanges();
+			return RedirectToAction("Index");
+			}
+			return View(helloWorld);
+        }
+    }
 }
 

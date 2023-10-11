@@ -1,9 +1,12 @@
 ﻿@model HelloWorld
 
-<h3>Create</h3>
+<h3>Edit</h3>
 
 <b>@ViewBag.Message</b>
-<form asp-action="Create" method="post">
+@*This will catch all the validation error in a perticular field and display it*@
+<form asp-action="Edit" method="post">
+<div asp-validation-summary="All" class="text-danger"></div>ß
+<input asp-for="HelloWorldId" type="hidden" />
     <div class="row">
         <div class="form-group col-md-6">
             <label class="form-label" asp-for="Name"></label>
@@ -68,7 +71,7 @@
         <div>
             <label class="form-label" asp-for="EnumMaritalStatus"></label>
             <select class="form-control" asp-for="EnumMaritalStatus" asp-items="Html.GetEnumSelectList<MaritalStatus>()">
-            <option>Select...</option>
+                <option>Select...</option>
             </select>
             <span class="text-danger" asp-validation-for="EnumMaritalStatus"></span>
         </div>
