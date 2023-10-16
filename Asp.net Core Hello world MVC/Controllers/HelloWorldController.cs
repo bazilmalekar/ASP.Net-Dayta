@@ -67,8 +67,13 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 		//Edit action to gets the data in our form
 		public IActionResult Edit(int id)
 		{
+
 			var helloWorld = _db.Helloworldtb.Find(id);
-			return View(helloWorld);
+            if (helloWorld == null)
+            {
+                return NotFound();
+            }
+            return View(helloWorld);
 		}
 
 		[HttpPost]
@@ -83,6 +88,26 @@ namespace Asp.net_Core_Hello_world_MVC.Controllers
 			}
 			return View(helloWorld);
         }
+
+		public IActionResult Delete(int id)
+		{
+			//Delete after confirmation
+			var helloWorld = _db.Helloworldtb.Find(id);
+			if(helloWorld == null)
+			{
+				return NotFound();
+			}
+			return View(helloWorld);
+		}
+
+		[HttpPost]
+		public IActionResult Delete(HelloWorld helloWorld)
+		{
+			_db.Helloworldtb.Remove(helloWorld);
+			_db.SaveChanges();
+			TempData["Message"] = "Record deleted successfully";
+			return RedirectToAction(nameof(Index));
+		}
     }
 }
 

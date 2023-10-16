@@ -4,7 +4,7 @@
 <h1>Hello World!</h1>
 
 <h3>@ViewBag.Message</h3>
-
+<h3>@TempData["Message"]</h3>
 <a asp-action="Create" class="btn btn-info">
     Create
 </a>
@@ -34,6 +34,8 @@
             <th>
                 Action
             </th>
+            <th>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -61,6 +63,9 @@
                 <td>
                     @*asp-rout-id is to pass parameter, where "id" is the arguement given in the controller, the name can be anything in place of id, but same thing has to be mentioned in view and controller*@
                     <a asp-action="Edit" asp-route-id="@item.HelloWorldId">Edit</a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.HelloWorldId">Delete</a>
                 </td>
             </tr>
         }

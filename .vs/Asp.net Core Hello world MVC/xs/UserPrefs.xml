@@ -1,28 +1,30 @@
 ﻿<Properties StartupConfiguration="{292B7E90-453C-4B85-BDC8-CBB5D2F384C3}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" relfile="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" line="78" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Asp.net_220Core_220Hello_220world_220MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs">
     <Files>
-      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" Line="12" Column="46" />
-      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" Line="78" Column="1" />
-      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Create.cshtml" Line="78" Column="40" />
-      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Index.cshtml" Line="66" Column="10" />
-      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Edit.cshtml" Line="8" Column="62" />
+      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" Line="1" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" Line="106" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Create.cshtml" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Index.cshtml" Line="8" Column="45" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Edit.cshtml" />
+      <File FileName="Asp.net Core Hello world MVC/appsettings.json" />
+      <File FileName="Asp.net Core Hello world MVC/Data /Asp.net Core Hello world MVCDbContext.cs" Line="18" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Program.cs" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Delete.cshtml" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp.net Core Hello world MVC" expanded="True">
+          <Node name="Asp.net Core Hello world MVC">
             <Node name="Asp.net Core Hello world MVC">
-              <Node name="Controllers" expanded="True">
+              <Node name="Controllers">
                 <Node name="HelloWorldController.cs" selected="True" />
               </Node>
+              <Node name="Data " expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>
@@ -30,5 +32,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Asp.net_220Core_220Hello_220world_220MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
