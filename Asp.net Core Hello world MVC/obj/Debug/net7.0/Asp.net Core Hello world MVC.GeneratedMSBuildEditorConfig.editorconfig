@@ -48,6 +48,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Views/States/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Views/States/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Views/States/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Views/States/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Views/States/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/bazilmalekar/Developer/Datya Solutions/Hello world MVC/Asp.net Core Hello world MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

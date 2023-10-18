@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Asp.net_Core_Hello_world_MVC.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +12,8 @@ namespace Asp.net_Core_Hello_world_MVC.Data
 		}
 		// "HelloWorld" is Model name
 		public DbSet<HelloWorld> Helloworldtb { get; set; }
+		// "HelloWorld" is Model name
+		public DbSet<Asp.net_Core_Hello_world_MVC.Models.States> States { get; set; } = default!;
 	}
 }
 

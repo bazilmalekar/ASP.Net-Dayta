@@ -1,37 +1,44 @@
 ﻿<Properties StartupConfiguration="{292B7E90-453C-4B85-BDC8-CBB5D2F384C3}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp.net Core Hello world MVC/Models/States.cs">
     <Files>
-      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" Line="1" Column="1" />
-      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" Line="106" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Models/HelloWorld.cs" />
+      <File FileName="Asp.net Core Hello world MVC/Controllers/HelloWorldController.cs" />
       <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Create.cshtml" />
-      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Index.cshtml" Line="8" Column="45" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Index.cshtml" />
       <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Edit.cshtml" />
       <File FileName="Asp.net Core Hello world MVC/appsettings.json" />
-      <File FileName="Asp.net Core Hello world MVC/Data /Asp.net Core Hello world MVCDbContext.cs" Line="18" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Data /Asp.net Core Hello world MVCDbContext.cs" />
       <File FileName="Asp.net Core Hello world MVC/Program.cs" />
-      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Delete.cshtml" Line="7" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Views/HelloWorld/Delete.cshtml" />
+      <File FileName="Asp.net Core Hello world MVC/Models/States.cs" Line="17" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Migrations/20231006044224_initial.cs" />
+      <File FileName="Asp.net Core Hello world MVC/Controllers/StatesController.cs" Line="1" Column="1" />
+      <File FileName="Asp.net Core Hello world MVC/Views/States/Create.cshtml" />
+      <File FileName="Asp.net Core Hello world MVC/Views/States/Delete.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp.net Core Hello world MVC">
-            <Node name="Asp.net Core Hello world MVC">
-              <Node name="Controllers">
-                <Node name="HelloWorldController.cs" selected="True" />
-              </Node>
-              <Node name="Data " expanded="True" />
+          <Node name="Asp.net Core Hello world MVC" expanded="True">
+            <Node name="Asp.net Core Hello world MVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="States" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Asp.net_220Core_220Hello_220world_220MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
